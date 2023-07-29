@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --ff: "Karla", sans-serif;
+  --fs-b: 16px;
+  --pc-Cyan: hsl(179, 62%, 43%);
+  --pc-Bright-Yellow: hsl(71, 73%, 54%);
+  --nc-Light-Gray: hsl(204, 43%, 93%);
+  --nc-Grayish-Blue: hsl(216, 29%, 20%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--nc-Light-Gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: var(--ff);
+  font-size: var(--fs-b);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-card {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2rem;
+}
+
+.top-card h1 {
+  color: var(--pc-Cyan);
+  padding-bottom: 1.5rem;
+  font-size: 25px;
+}
+
+.top-card b {
+  color: var(--pc-Bright-Yellow);
+  font-size: 18px;
+}
+
+.top-card p {
+  padding-top: 1rem;
+  color: rgb(162, 159, 159);
+  font-weight: 700;
+  padding-right: 4rem;
+}
+
+.bottom-card {
+  display: flex;
+}
+
+.sign-up {
+  width: 50%;
+  background-color: var(--pc-Cyan);
+  border-bottom-left-radius: 5px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.sign-up h3 {
+  padding-bottom: 1rem;
+}
+
+.sign-up .price {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.sign-up .price p {
+  color: var(--nc-Light-Gray);
+  padding-left: 0.5rem;
+  padding-bottom: 0;
+}
+
+.sign-up p {
+  color: var(--nc-Light-Gray);
+  padding-bottom: 2rem;
+}
+
+.sign-up .btn {
+  padding: 0.85rem 6.5rem;
+  background-color: var(--pc-Bright-Yellow);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.25);
+}
+
+.why-us {
+  width: 50%;
+  background-color: rgb(18, 203, 203);
+  border-bottom-right-radius: 5px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.why-us h3 {
+  padding-bottom: 1rem;
+}
+
+.why-us p {
+  color: var(--nc-Light-Gray);
+  padding-right: 7rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 325px;
+  }
+  .top-card {
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .bottom-card {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  .sign-up {
+    width: 100%;
+    border-bottom-left-radius: 0;
+  }
+
+  .sign-up .btn {
+    padding: 0.85rem 7.5rem;
+  }
+
+  .why-us {
+    width: 100%;
+    border-bottom-left-radius: 5px;
+  }
+}
